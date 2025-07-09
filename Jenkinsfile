@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'sahils11/my-app'
-        AWS_REGION = 'us-east-1'
+        AWS_REGION = 'ap-south-1'
         CLUSTER_NAME = 'ecommerce-cluster'
     }
 
