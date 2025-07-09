@@ -99,7 +99,7 @@ eksctl create cluster \
 Configure `kubectl` to interact with the EKS cluster.
 
 ```bash
-aws eks --region us-east-1 update-kubeconfig --name ecommerce-cluster
+aws eks --region ap-south-1 update-kubeconfig --name ecommerce-cluster
 kubectl get nodes
 ```
 
@@ -117,7 +117,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'sahils11/my-app'     // Docker image name to build and push
-        AWS_REGION = 'us-east-1'               // AWS region where EKS cluster is hosted
+        AWS_REGION = 'ap-south-1'               // AWS region where EKS cluster is hosted
         CLUSTER_NAME = 'ecommerce-cluster'     // Name of your EKS cluster
     }
 
